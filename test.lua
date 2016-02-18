@@ -595,7 +595,11 @@ e = [=[
 ]=]
 
 r = parse(s)
-assert(r == e)
+if not (r == e) then
+        print("assert(r==e)", "r:", type(r), r, "e:", e, type(e), "s:")
+        error("ERROR: assert fail at line ~598", 0)
+end
+--assert(r == e)
 
 s = [=[
 while 1 do
