@@ -48,6 +48,8 @@ opid: 'add' | 'sub' | 'mul' | 'div' | 'idiv' | 'mod' | 'pow' | 'concat'
 ]]
 local parser = {}
 
+local string = require "string"
+
 local lpeg = require "lpeg"
 local scope = require "lua-parser.scope"
 
